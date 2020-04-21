@@ -129,11 +129,12 @@
 <!--            <version>2.9.2</version>-->
 <!--        </dependency>-->
 
-
+       <!--rabbit  MQ  整合  -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-amqp</artifactId>
         </dependency>
+        <!--    用于java对象，和json字符串 相互转换    -->
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
