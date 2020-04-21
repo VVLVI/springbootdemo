@@ -129,6 +129,8 @@
 <!--            <version>2.9.2</version>-->
 <!--        </dependency>-->
 
+
+<!--        哎啦啦啦大声点-->
        <!--rabbit  MQ  整合  -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
