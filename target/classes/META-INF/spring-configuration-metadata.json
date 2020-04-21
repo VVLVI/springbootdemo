@@ -1,0 +1,27 @@
+{
+  "groups": [
+    {
+      "name": "wly",
+      "type": "com.alibaba.springboot2x.peizhifile.User",
+      "sourceType": "com.alibaba.springboot2x.peizhifile.User"
+    }
+  ],
+  "properties": [
+    {
+      "name": "wly.email",
+      "type": "java.lang.String",
+      "sourceType": "com.alibaba.springboot2x.peizhifile.User"
+    },
+    {
+      "name": "wly.name",
+      "type": "java.lang.String",
+      "sourceType": "com.alibaba.springboot2x.peizhifile.User"
+    },
+    {
+      "name": "wly.pass",
+      "type": "java.lang.String",
+      "sourceType": "com.alibaba.springboot2x.peizhifile.User"
+    }
+  ],
+  "hints": []
+}

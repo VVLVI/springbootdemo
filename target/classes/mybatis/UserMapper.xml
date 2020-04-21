@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<!--在这里  特别注意   mappper.xml文件， .xml后缀 一定要存在，否则会爆出  绑定错误！！-->
+
+
+<mapper namespace="com.alibaba.springboot2x.mybatiszhenghe.dao.UserMapper">
+
+    <insert id="insertUser" parameterType="com.alibaba.springboot2x.mybatiszhenghe.entity.User">
+        insert INTO t_user
+        (user_name,password)
+        VALUES
+        (#{userName},#{password})
+    </insert>
+
+</mapper>
