@@ -6,10 +6,20 @@ package com.alibaba.springboot2x;/*
 
 
 import com.battcn.swagger.annotation.EnableSwagger2Doc;
+import org.apache.ibatis.binding.MapperProxy;
+import org.apache.ibatis.executor.BaseExecutor;
+import org.apache.ibatis.executor.Executor;
+import org.apache.ibatis.logging.jdbc.PreparedStatementLogger;
+import org.apache.ibatis.mapping.MappedStatement;
+import org.apache.ibatis.parsing.GenericTokenParser;
+import org.mybatis.spring.SqlSessionTemplate;
 import org.mybatis.spring.annotation.MapperScan;
+import org.mybatis.spring.mapper.ClassPathMapperScanner;
+import org.mybatis.spring.mapper.MapperScannerConfigurer;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
+import org.thymeleaf.standard.expression.GenericTokenExpression;
 
 
 @SpringBootApplication
@@ -29,4 +39,7 @@ public class springboot2xApplication {
     public static void main(String[]args){
         SpringApplication.run(springboot2xApplication.class,args);
     }
+
+
+
 }

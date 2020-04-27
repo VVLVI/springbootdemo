@@ -8,9 +8,11 @@ package com.alibaba.springboot2x.mybatiszhenghe.service.impl;/*
 import com.alibaba.springboot2x.mybatiszhenghe.dao.UserMapper;
 import com.alibaba.springboot2x.mybatiszhenghe.entity.User;
 import com.alibaba.springboot2x.mybatiszhenghe.service.UserService;
+import org.mybatis.spring.SqlSessionFactoryBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
+import tk.mybatis.mapper.common.BaseMapper;
 
 import javax.annotation.Resource;
 import java.util.ArrayList;
@@ -28,6 +30,7 @@ public class UserServiceImpl implements UserService {
         List<User> userList=new ArrayList<>();
         userList.add(new User(1L,"wly","123456"));
         return userMapper.findByName(userName);
+
     }
 
     @Override
